@@ -1,0 +1,78 @@
+/* formatting for all */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-right: 3%;
+}
+
+/* making the jumotron fit my page */
+.jumbotron {
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 2px solid black;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+/* top header */
+.headerName {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 72px;
+}
+
+/* main heading, hound and seek */
+h1 {
+    font-size: 20px;
+}
+
+/* make a container */
+.form-inline {
+    margin-left: 3%;
+}
+
+/* animal icon sizing  */
+.fas {
+    font-size: 72px;
+    cursor: pointer;
+}
+
+/* This is the bar for the zip code entry from the user */
+#pita {
+    padding-top: 3%;
+    margin-top: 5px;
+}
+
+/* Dog drop down for breeds */
+.dropdown {
+    margin-top: 20px;
+    margin-left: 3%;
+
+}
+/* Dogs css files, Graysons piece*/
+
+#banner-message {
+background: #fff;
+border-radius: 4px;
+padding: 20px;
+font-size: 25px;
+text-align: center;
+transition: all 0.2s;
+margin: 0 auto;
+width: 500px;
+}
+
+#breed_data {
+background: #fff;
+border-radius: 4px;
+padding: 20px;
+font-size: 12px;
+text-align: left;
+transition: all 0.2s;
+margin: 0 auto;
+width: 500px;
+}
+
+#breed_image {
+background: #fff;
+margin: 0 auto;
+width: 460px;
+}
