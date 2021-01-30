@@ -35,7 +35,10 @@ h1 {
     cursor: pointer;
 }
 
-/* This is the bar for the zip code entry from the user */
+/* container for the dog breeds --------------------------- still needed */
+
+
+/* This is the bar for the zip code entry from the user on html 2 */
 #pita {
     padding-top: 3%;
     margin-top: 5px;
@@ -47,6 +50,11 @@ h1 {
     margin-left: 3%;
 
 }
+
+/* button styling for the returns */
+#imageBtn 
+
+
 /* Dogs css files, Graysons piece*/
 
 #banner-message {

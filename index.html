@@ -27,10 +27,7 @@
         <p class="lead"> Lets find your perfect companion!</p>
     </header>
 
-    <!-- Starting the section for the animal selction -->
-
-
-    <!-- This will be the area where I place in the dog photos -->
+    <!-- Starting the section for the animal selction portion. This is one whole container to the left. -->
     <section>
         <div class="container">
             <div class="row">
@@ -38,8 +35,12 @@
                     <!-- Start the header for columns  -->
                     <p class="search-header my-1">What type of animal are you looking for?</p>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-primary mb-2"> <i class="fas fa-cat"></i> </button>
-                        <button type="submit" class="btn btn-primary mb-2"> <i class="fas fa-dog"></i> </button>
+                        <!-- cat button -->
+                        <button type="submit" class="btn btn-primary mb-2" id="catBtn"> <i class="fas fa-cat"></i>
+                        </button>
+                        <!-- dog button -->
+                        <button type="submit" class="btn btn-primary mb-2" id="dogBtn"> <i class="fas fa-dog"></i>
+                        </button>
                         <div class="dropdown">
                             <p>Please select your breed preference</p>
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -52,7 +53,8 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul> <br><br>
                             <!-- random generator button -->
-                            <button type="button" class="btn btn-info">Surprise me!</button>
+                            <button class="surprise">Surprise me!</button>
+
                         </div>
                     </div>
 
@@ -61,18 +63,23 @@
                     <div class="row">
                         <div class="col-4 bg-light">
                             <div class="row">
-                                <div class="col-4" id=>
+                                <div class="col-1" id=>
                                     <p id="searchOne"></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-1">
                                     <p id="searchTwo"></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-1">
                                     <p id="searchThree"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <p id="searchFour"></p>
                                 </div>
                             </div>
                         </div>
@@ -81,29 +88,26 @@
             </div>
         </div>
     </section>
-    
 
-
-
-        <!-- Creating area for the 5 day forcast to populate, header
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>5-Day Forecast</h3>
-                        </div>
-                    </div>
-                    Creating 5 rows for the days
-                    <div class="row">
-                        <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                        <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                        <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                        <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                        <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-1" style="align-items: right">
+            <button type="button" class="btn btn-danger" id="imageBtn">Back</button>
         </div>
-    </section> -->
-
+        <!-- Need to update this with the image from the dog API -->
+        <div class="col-md-3">
+            <img id="current-gif" src="https://i.pinimg.com/originals/3c/80/23/3c8023d7b1f1266a87d262fc2ecbb5ed.gif"
+                class="img-fluid img-thumbnail" alt="...">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" id="imageBtn">Forward</button>
+        </div>
+    </div>
+    <!-- Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- our java -->
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
