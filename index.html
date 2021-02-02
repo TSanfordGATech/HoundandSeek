@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the reset CSS link -->
     <link rel="stylesheet" href="./reset.css">
-    <!-- This is the bootstrap CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Font Awesome CSS link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
@@ -18,96 +15,62 @@
 </head>
 
 <body>
-
-    <!-- Jumbotron from bootstrap -->
-    <header class="jumbotron">
-        <!-- Creating header -->
-        <h1 class="headerName">Hound and Seek</h1>
-        <!-- starting calendar piece -->
+    <header>
+        <h2>Hound and Seek</h2>
         <p class="lead"> Lets find your perfect companion!</p>
     </header>
 
-    <!-- Starting the section for the animal selction portion. This is one whole container to the left. -->
+    <!-- This section will contain the species selection -->
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-4 bg-light">
-                    <!-- Start the header for columns  -->
-                    <p class="search-header my-1">What type of animal are you looking for?</p>
-                    <div class="input-group mb-3">
-                        <!-- cat button -->
-                        <button type="submit" class="btn btn-primary mb-2" id="catBtn"> <i class="fas fa-cat"></i>
-                        </button>
-                        <!-- dog button -->
-                        <button type="submit" class="btn btn-primary mb-2" id="dogBtn"> <i class="fas fa-dog"></i>
-                        </button>
-                        <div class="dropdown">
-                            <p>Please select your breed preference</p>
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul> <br><br>
-                            <!-- random generator button -->
-                            <button class="surprise">Surprise me!</button>
+        <nav>
+            <h3>Select your preferences!</h3>
+            <br>
+            <form>
+                <input type="radio" id="catBtn" name="species" value="cat">
+                <label for="male">Cat</label><br>
+                <input type="radio" id="dogBtn" name="species" value="dog">
+                <label for="female">Dog</label><br>
+                <input type="radio" id="other" name="species" value="other">
+                <label for="other">Surpise me!</label>
+            </form>
 
-                        </div>
-                    </div>
-
-                    <!-- Rows for recently viewed -->
-                    <h2> Your recent searches:</h2>
-                    <div class="row">
-                        <div class="col-4 bg-light">
-                            <div class="row">
-                                <div class="col-1" id=>
-                                    <p id="searchOne"></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1">
-                                    <p id="searchTwo"></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1">
-                                    <p id="searchThree"></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1">
-                                    <p id="searchFour"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- This will be the row where the drop down can populat back to based off selection -->
+            <br>
+            <h3>Breed List</h3>
+            <br>
+            <p>Don't see a list? Make sure you have a species selected!</p><br>
+            <div class="dropdown">
+                <button class="dropbtn">Breeds</button>
+                <div class="dropdown-content">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
                 </div>
             </div>
-        </div>
+            
+            <h3> <br>Recent Searches</h3>
+            <div class="recentSearches">
+                <img src="./Sample Images/IMG_0205.jpg" alt="Trulli" width="150" height="150">
+                <img src="./Sample Images/IMG_0354.jpg" alt="Trulli" width="150" height="150">
+                <img src="./Sample Images/IMG_0509.jpg" alt="Trulli" width="150" height="150">
+
+            </div>
+        </nav>
+
+        <article>
+            <h1>Location of images for the breed</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptatibus impedit recusandae quibusdam
+                et. Id eius rem officia libero quae eaque reprehenderit dignissimos! Soluta sint enim, consectetur saepe
+                omnis corrupti.</p>
+        </article>
     </section>
 
-    <div class="row">
-        <div class="col-md-1" style="align-items: right">
-            <button type="button" class="btn btn-danger" id="imageBtn">Back</button>
-        </div>
-        <!-- Need to update this with the image from the dog API -->
-        <div class="col-md-3">
-            <img id="current-gif" src="https://i.pinimg.com/originals/3c/80/23/3c8023d7b1f1266a87d262fc2ecbb5ed.gif"
-                class="img-fluid img-thumbnail" alt="...">
-        </div>
-        <div class="col-md-3">
-            <button type="button" class="btn btn-primary" id="imageBtn">Forward</button>
-        </div>
-    </div>
-    <!-- Jquery script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- our java -->
-    <script src="./assets/script.js"></script>
+    <footer>
+        <p>This one is perfect! Show me where I can adopt this breed, or a mix, near me!</p>
+    </footer>
+
+
+
 </body>
 
 </html>
