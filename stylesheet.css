@@ -22,15 +22,29 @@
       padding-bottom: 2%;
       font-size: 82px;
   }
-  
+  /* Style of Header three */
   h3 {
       font-size: xx-large;
   }
-  /* Create two columns/boxes that floats next to each other */
+  /* Style of Header four */
+  h4 {
+    margin: 1%;
+    text-align: left;
+  }
+  /* for the image box */
+  .hide {
+    display: none;
+  }
+
+  .active {
+    display: inherit;
+  }
+
+  /* Create two columns/boxes that floats next to each other, this is for the body style*/
   nav {
     float: left;
     width: 30%;
-    height: 600px; 
+    height: auto; 
     background: #ccc;
     padding: 30px;
     padding-bottom: 10px;
@@ -38,17 +52,24 @@
     cursor: pointer;
   }
   
-  /* ------------------change */
+  /* Article to the right that will house the breed photos */
   article {
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: #f1f1f1;
-    height: 600px; 
+    background-color: #ffffff;
+    height: inherit; 
   }
   
+  /* PITA is on HTML two, it is the main section container  */
+  #pita {
+    margin: 1%;
+  }
   
-  
+  /* Zip code */
+  #inputZip {
+    margin: 1%;
+  }
   
   /* Clear floats after the columns------------------change */
   section::after {
@@ -56,7 +77,7 @@
     display: table;
     clear: both;
   }
-  
+
   /* Footer style - this will act as a button to the next page.  */
   footer {
     background-color: #777;
@@ -67,7 +88,7 @@
     cursor: pointer;
   }
   
-  
+
   /* Making my drop down box for the breeds */
   .dropbtn {
       background-color: lightblue;
@@ -108,6 +129,29 @@
     .dropdown:hover .dropbtn {
       background-color: lightskyblue;
     }
+
+    /* Formatting the footer link */
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:active {
+      color:black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 600px) {
     nav, article {

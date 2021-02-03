@@ -1,5 +1,5 @@
-# DailyPlanner
-A simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+# Hound and Seek
+Together we build a web page where a user can go in, select a species (dog or cat), select a breed, and view images about the breed. If the user likes the appearance of that animal, they can select the button at the bottom to go to a page where we will return shelters that are local to them so they can go and adopt. 
 
 
 ## Contact information and Deployment

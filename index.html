@@ -17,7 +17,7 @@
 <body>
     <header>
         <h2>Hound and Seek</h2>
-        <p class="lead"> Lets find your perfect companion!</p>
+        <p class="lead"> Let us find your perfect companion!</p>
     </header>
 
     <!-- This section will contain the species selection -->
@@ -25,10 +25,10 @@
         <nav>
             <h3>Select your preferences!</h3>
             <br>
-           <span>
-                <button id = "catBtn"> Cat </button>
-                <button id = "dogBtn"> Dog </button>
-                <button id = "surprise"> Surprise me!</button>
+            <span>
+                <button id="catBtn"> Cat </button>
+                <button id="dogBtn"> Dog </button>
+                <button id="surpriseBtn"> Surprise me!</button>
             </span>
 
             <!-- This will be the row where the drop down can populate back to based off selection -->
@@ -38,40 +38,45 @@
             <p>Don't see a list? Make sure you have a species selected!</p><br>
             <div id="banner-message">
                 <p>Select a Breed</p>
-        
+
                 <select class="breed_select">
                     <option></option>
                 </select>
-        
+
             </div>
-            
+
             <h3> <br>Recent Searches</h3>
             <div class="recentSearches">
                 <img src="./Sample Images/IMG_0205.jpg" alt="Trulli" width="150" height="150">
                 <img src="./Sample Images/IMG_0354.jpg" alt="Trulli" width="150" height="150">
                 <img src="./Sample Images/IMG_0509.jpg" alt="Trulli" width="150" height="150">
-
             </div>
         </nav>
 
         <article>
-            <h1>Location of images for the breed</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptatibus impedit recusandae quibusdam
-                et. Id eius rem officia libero quae eaque reprehenderit dignissimos! Soluta sint enim, consectetur saepe
-                omnis corrupti.</p>
+            <img class="img hide" id="breed_image" src="">
         </article>
+        <style>
+            .img {
+                width: 500px;
+                height: 500px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </section>
 
     <footer>
-        <p>This one is perfect! Show me where I can adopt this breed, or a mix, near me!</p>
+        <a href="page2.html">This one is perfect! Look up adoption centers near me!</a>
     </footer>
 
- <!-- Jquery script -->
- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
- <!-- Jquery -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <!-- our java -->
- <script src="./script.js"></script>
+    <!-- Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- our java -->
+    <script src="./script.js"></script>
 
 
 
