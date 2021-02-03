@@ -25,27 +25,24 @@
         <nav>
             <h3>Select your preferences!</h3>
             <br>
-            <form>
-                <input type="radio" id="catBtn" name="species" value="cat">
-                <label for="male">Cat</label><br>
-                <input type="radio" id="dogBtn" name="species" value="dog">
-                <label for="female">Dog</label><br>
-                <input type="radio" id="other" name="species" value="other">
-                <label for="other">Surpise me!</label>
-            </form>
+           <span>
+                <button id = "catBtn"> Cat </button>
+                <button id = "dogBtn"> Dog </button>
+                <button id = "surprise"> Surprise me!</button>
+            </span>
 
-            <!-- This will be the row where the drop down can populat back to based off selection -->
+            <!-- This will be the row where the drop down can populate back to based off selection -->
             <br>
             <h3>Breed List</h3>
             <br>
             <p>Don't see a list? Make sure you have a species selected!</p><br>
-            <div class="dropdown">
-                <button class="dropbtn">Breeds</button>
-                <div class="dropdown-content">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
+            <div id="banner-message">
+                <p>Select a Breed</p>
+        
+                <select class="breed_select">
+                    <option></option>
+                </select>
+        
             </div>
             
             <h3> <br>Recent Searches</h3>
