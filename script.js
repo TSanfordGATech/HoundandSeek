@@ -74,7 +74,7 @@ $(document).ready(function () {
     // call the getBreeds function which will load all the Dog breeds into the select control
     getBreeds();
   });
-
+​
   $("#catBtn").on("click", function () {
     $(".img").addClass("active")
     var $breed_select = $('select.breed_select');
@@ -152,7 +152,9 @@ $(document).ready(function () {
   });
   // -------------------------------Heather's piece, functions that call the shelter information and the recent search images ------------------------------------------------------------
   $(".submitzip").on("click", async function () {
-    var zip = $("#inputZip").val()
+    //clears old, expired token
+     localStorage.clear();
+    var zip = $(".inputZip").val()
     console.log(zip)
     var shelters = await getShelters(zip);
     async function grabTokenAndSave() {
@@ -216,6 +218,7 @@ $(document).ready(function () {
       }).then(function (shelterList) {
         // the names of organization are in an array
         var organizations = shelterList.organizations;
+        // loops through the organizations array
         for (var i = 0; i < organizations.length; i++) {
           var listOfShelters = $("#shelterlist")
           var currentOrg = organizations[i]
