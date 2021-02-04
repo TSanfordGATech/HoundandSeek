@@ -74,7 +74,7 @@ $(document).ready(function () {
     // call the getBreeds function which will load all the Dog breeds into the select control
     getBreeds();
   });
-​
+
   $("#catBtn").on("click", function () {
     $(".img").addClass("active")
     var $breed_select = $('select.breed_select');
