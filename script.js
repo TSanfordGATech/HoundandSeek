@@ -153,7 +153,7 @@ $(document).ready(function () {
   // -------------------------------Heather's piece, functions that call the shelter information and the recent search images ------------------------------------------------------------
   $(".submitzip").on("click", async function () {
     //clears old, expired token
-     localStorage.clear();
+    localStorage.clear();
     var zip = $(".inputZip").val()
     console.log(zip)
     var shelters = await getShelters(zip);
@@ -191,10 +191,10 @@ $(document).ready(function () {
         token = localStorage.getItem('token');
         console.log('saved new token' + token);
       }
-      var devBaseQueryURL = "https://cors-anywhere.herokuapp.com/"
+      //var devBaseQueryURL = "https://cors-anywhere.herokuapp.com/"
       // endpoint -- shelters
       var petFinderEndpoint = "https://api.petfinder.com/v2/organizations?location=" + zip + "&distance=100";
-      var queryURL = devBaseQueryURL + petFinderEndpoint;
+      var queryURL = petFinderEndpoint;
       return $.ajax({
         type: "GET",
         url: queryURL,
