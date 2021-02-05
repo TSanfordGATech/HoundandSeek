@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 ​
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,36 @@
     <title>Hound and Seek</title>
 </head>
 ​
+
 <body>
     <header>
         <h2>Hound and Seek</h2>
         <p class="lead"> Let us find your perfect companion!</p>
     </header>
-​
+    ​
     <!-- This section is the entry for the zip code from the user -->
     <section class="mainSection" id="pita">
-            <h4> Input your Zip Code</h4>
-                <input id="zip" name="zip" type="text" pattern="[0-9]*" class="inputZip">
-                    <button class="submitzip">Submit</button>
-                </input>
+        <h4> Input your Zip Code</h4>
+        <input id="zip" name="zip" type="text" pattern="[0-9]*" class="inputZip">
+        <button class="submitzip">Submit</button>
+        </input>
     </section>
-​
-    <section>
-        <h4>Shelters Near You</h4>
+    ​
+    <section id="shelters">
+        <p class="nearYou">Shelters Near You</p>
         <br>
-        <ul id="shelterlist"></ul>       
+        <ul id="shelterlist"></ul>
     </section>​
-​
+    ​
+    ​
     <footer>
         <a href="index.html">Go back to previous page, I want to look at more!</a>
     </footer>
-​
-​
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./script.js"></script>
-​
+    ​
+    ​
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+    ​
 </body>
+
 </html>
