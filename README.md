@@ -13,6 +13,8 @@ Tori- Tori.danielle.clark91@gmail.com
 
 Link to deployed project:  https://tsanfordgatech.github.io/HoundandSeek/
 Screen shot of completed assignment: ![Final Screen shot](./sample/hs.png)
+Link to Visual Aid: https://drive.google.com/file/d/1RYaNPscXfj8kks2FvonAiuOzXducG2kj/view?usp=sharing
+
 
 ## About this Project: 
 One stop shop for users to find their future pet. We utalized three API's, built out our own HTML, CSS, and containers, tokens, and jqeury. 
